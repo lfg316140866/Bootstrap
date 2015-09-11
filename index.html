@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式布局demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script>
+        (function() {
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i= e.length;
+            while (i--){
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#tab-link" class="click-tab-list">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#tab-info" class="click-tab-list">Info</a></li>
+                <li><a href="#tab-download" class="click-tab-list">Download</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about">Aboat</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+    </header>  
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+       </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/banner_img_1.jpg" alt="1 slide">
+            <div class="carousel-caption">
+                    <h3>这是第一站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-primary btn-sw" role="button">点击下载</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner_img_2.jpg" alt="2 slide">
+            <div class="carousel-caption">
+                    <h3>这是第二站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-info btn-sw" role="button">点击下载</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner_img_3.jpg" alt="3 slide">
+            <div class="carousel-caption">
+                    <h3>这是第三站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-warning btn-sw" role="button">点击下载</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner_img_4.jpg" alt="4 slide">
+            <div class="carousel-caption">
+                    <h3>这是第四站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-danger btn-sw" role="button">点击下载</a></p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一页</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一页</span>
+        </a>
+    </div>
+
+    <div class="container container-center">
+        <div class="row">
+            <div class="col-md-3">
+                    <img src="images/type_bar1img.png" alt="">
+                    <h3>这是第一站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-primary btn-sw" role="button">点击下载</a></p>
+            </div>
+            <div class="col-md-3">
+                    <img src="images/type_bar2img.png" alt="">
+                    <h3>这是第一站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-info btn-sw" role="button">点击下载</a></p>
+            </div>
+            <div class="col-md-3">
+                <img src="images/type_bar3img.png" alt="">
+                    <h3>这是第一站图片</h3>
+                    <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                    <p><a href="#" class="btn btn-danger btn-sw" role="button">点击下载</a></p>
+            </div>
+            <div class="col-md-3">
+                    <img src="images/type_bar4img.png" alt="">
+                        <h3>这是第一站图片</h3>
+                        <p>方式记得你反倒是你哦你是过山洞是当否哦is电饭锅</p>
+                        <p><a href="#" class="btn btn-warning btn-sw" role="button">点击下载</a></p>
+                </div>
+        </div>
+        <hr class="divider">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" id="tab-list">
+            <li role="presentation" class="active"><a href="#tab-link" aria-controls="link" role="tab" data-toggle="tab">Link</a></li>
+            <li role="presentation"><a href="#tab-info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+            <li role="presentation"><a href="#tab-about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+            <li role="presentation"><a href="#tab-download" aria-controls="download" role="tab" data-toggle="tab">Download</a></li>
+        </ul>
+            
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab-link">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">Home<span class="text-muted">放大放大地方</span></h2>
+                        <p class="lead">飞碟说吊死健康反倒是你还记得是吊死吊死是是死是方法hi还是还是飞碟说范德萨发生法第三方方式</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/compound_cosy_0_bg.png" alt="" class="feature-image img-reaponsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-info">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">Home<span class="text-muted">放大放大地方</span></h2>
+                        <p class="lead">飞碟说吊死健康反倒是你还记得是吊死吊死是是死是方法hi还是还是飞碟说范德萨发生法第三方方式</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/compound_trechbg_0_bg.png" alt="" class="feature-image img-reaponsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-about">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">Home<span class="text-muted">放大放大地方</span></h2>
+                        <p class="lead">飞碟说吊死健康反倒是你还记得是吊死吊死是是死是方法hi还是还是飞碟说范德萨发生法第三方方式</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/compound_trendbg_0_bg.png" alt="" class="feature-image img-reaponsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-download">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">Home<span class="text-muted">放大放大地方</span></h2>
+                        <p class="lead">飞碟说吊死健康反倒是你还记得是吊死吊死是是死是方法hi还是还是飞碟说范德萨发生法第三方方式</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/compound_trendbg_0_bg.png" alt="" class="feature-image img-reaponsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="content">
+            <div class="row">
+                  <div class="col-md-2">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <h1>地方</h1>
+                              <h2>地方</h2>
+                              <h3>地方</h3>
+                              <h4>地方</h4>
+                              <h5>地方</h5>
+                              <h6>地方</h6>
+                              <p class="">
+<samp>This text is meant to be treated as sample output from a computer program.</samp>
+</p>
+
+                          </div>
+                          <div class="col-md-6">2</div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-4">
+                    <div class="form-group has-success has-feedback">
+                      <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+                      <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+                      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                      <span id="inputSuccess5Status" class="sr-only">(success)</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                      <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
+                      <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+                      </div>
+                      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                      <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+                    </div>
+                    <nav>
+                      <ul class="pagination">
+                           <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                           <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                           <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                           <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                           <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                           <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                      </ul>
+                      </nav
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+              </div>
+        </div>
+        <footer>
+            <div class="pull-right"><a href="#top">回到顶部</a></div>
+            <p>2014 慕课网</p>
+        </footer>
+    </div>
+
+<div class="modal fade" id="about">
+           <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">about</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>发你发快递分开过地方发发几个多个感觉到京东京东空旷的股护肤和股份的华国锋的法国恢复规划大发光火地方地方价格好地方建国后更好地设计稿哈打算地方你的</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                  </div>
+             </div><!-- /.modal-content -->
+           </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+ <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+    $(document).ready(function () {
+        $(".click-tab-list").click(function () {
+            var _href = $(this).attr("href");
+            $("#tab-list a[href='" + _href + "']").tab("show");
+        });
+    });
+ </script>
+ </body>
+</html>
